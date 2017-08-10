@@ -265,9 +265,9 @@
 </head>
 <body onresize = "resize()">
   <div id = "main-container" >
-    <div style = "font-size: 35px; text-align: center; color: green">FGO Card Generator</div> 
-    <div style = "text-align: center; font-size: 15px; padding-bottom: 20px">Original Code by juncaixinchi<br>Expanded by Aister</div>
-    Rarity<br><br>
+    <div style = "font-size: 35px; text-align: center; color: green">FGOカードジェネレーター</div> 
+    <div style = "text-align: center; font-size: 15px; padding-bottom: 20px">開発:juncaixinchi<br>翻訳:Morikapu</div>
+    レア度<br><br>
     <select id = "Hero_rarity" style = "max-width:250px; width: 100%">
       <option value = "1">1 ☆</option>
       <option value = "2">2 ☆</option>
@@ -282,46 +282,47 @@
     <br>
     <br>
     <div id="switch">
-      Card Type<br><br>  
+      カードタイプ<br><br>  
       <input id="toggle" class="toggle toggle_show" checked="checked" type="checkbox" value="1">
-      <label for="toggle" data-on="Servant (Click to switch)" data-off="Craft Essences (Click to switch)"></label>
+      <label for="toggle" data-on="サーヴァント(クリックで切り替え)" data-off="概念礼装(クリックで切り替え)"></label>
       <div>
-        Name<br><br>
+        名前<br><br>
         <input type = "text" id = "CE_name" placeholder = "Name" style = "max-width:250px; width: 100%"><br><br>
-        Sub Name<br><br>
+        別名<br><br>
         <input type = "text" id = "CE_subname" placeholder = "Class Name" style = "max-width:250px; width: 100%"><br><br>
       </div>
       <div>
-        Number Color<br><br>
+        ナンバーカラー<br><br>
         <input id="gold" class="toggle" checked="checked" type="checkbox" value="1">
-        <label for="gold" data-on="White (Click to switch)" data-off="Gold (Click to switch)"></label>
-        Name<br><br>
+        <label for="gold" data-on="白(クリックで変更)" data-off="金(クリックで変更)"></label>
+        名前<br><br>
         <input type = "text" id = "Hero_name" placeholder = "Name" style = "max-width:250px; width: 100%"><br><br>
-        Class Name<br><br>
+        クラス名称<br><br>
         <input type = "text" id = "Hero_subname" placeholder = "Sub Name" style = "max-width:250px; width: 100%"><br><br>
-        Class Icon<br><br>
+        クラスアイコン<br><br>
         <select id = "Hero_class" style = "max-width:250px; width: 100%">
-          <option value = "saber">Saber</option>
-          <option value = "lancer">Lancer</option>
-          <option value = "archer">Archer</option>
-          <option value = "rider">Rider</option>
-          <option value = "caster">Caster</option>
-          <option value = "assassin">Assassin</option>
-          <option value = "berserker">Berserker</option>
-          <option value = "ruler">Ruler</option>
-          <option value = "avenger">Avenger</option>
-          <option value = "shielder">Shielder</option>
-          <option value = "all">Misc</option>
+          <option value = "saber">セイバー</option>
+          <option value = "lancer">ランサー</option>
+          <option value = "archer">アーチャー</option>
+          <option value = "rider">ライダー</option>
+          <option value = "caster">キャスター</option>
+          <option value = "assassin">アサシン</option>
+          <option value = "berserker">バーサーカー</option>
+          <option value = "ruler">ルーラー</option>
+          <option value = "avenger">アヴェンジャー</option>
+          <option value = "shielder">シールダー</option>
+          <option value = "all">ALL</option>
         </select><br><br>
       </div>
     </div>
-    Please upload the photo<br><br>
+    画像のアップロード<br><br>
     <input type = "file" name = "file" onchange = "imgPreview(this)" value = "上传图片">
     <br>
     <br>
     <a href = "#Canvas-position"><button onclick = "get_pic('myCanvas')">Generate!</button></a>
     <br>
-    <p style = "font-size: 10pt">Tips: For best result, please use image size of 730 x 500！</p>
+    <p style = "font-size: 10pt">730 x 500画像で用いることで綺麗に作成できます。</p>
+    <p>最初に適当な値を入力しジェネレートボタンを押して下さい。その後、カードに出力したい値を入力することによって文字化けが取れます。</p>
     <!--两个例子：
     <a href = "#Canvas-position"><button onclick = "get_zhou()">生成周天王！</button></a>
     <a href = "#Canvas-position"><button onclick = "get_lei()">生成蕾姆！</button></a> -->
