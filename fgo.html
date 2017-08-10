@@ -193,7 +193,7 @@
       img_hero = document.getElementById("preview");
       if(!img_hero.src) 
       {
-        alert("Please upload a picture!"); return;
+        alert("画像を選択して下さい。"); return;
       }
       preLoadImg(img_hero.src);
       if (document.getElementById("toggle").checked) {
@@ -284,7 +284,7 @@
     <div id="switch">
       カードタイプ<br><br>  
       <input id="toggle" class="toggle toggle_show" checked="checked" type="checkbox" value="1">
-      <label for="toggle" data-on="サーヴァント(クリックで切り替え)" data-off="概念礼装(クリックで切り替え)"></label>
+      <label for="toggle" data-on="サーヴァント(クリックで変更)" data-off="概念礼装(クリックで変更)"></label>
       <div>
         名前<br><br>
         <input type = "text" id = "CE_name" placeholder = "Name" style = "max-width:250px; width: 100%"><br><br>
@@ -331,7 +331,7 @@
   <div id = "Canvas-container">
     <a name = "Canvas-position">
       <canvas id = "myCanvas" width = "500" height = "850" style = "border:1px solid #c3c3c3" hidden = "hidden">
-        Your browser doesn't support Canvas, please use a more modern browser!
+        ご利用のブラウザには対応していません。他のブラウザをご利用下さい。
       </canvas>
       <img id = "pic_show">
     </a>
